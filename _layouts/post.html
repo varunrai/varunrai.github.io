@@ -8,17 +8,18 @@ layout: default
   <div class="entry">
     {{ content }}
   </div>
-
+  
+  <div class="site-description" style="font-size:12px; width: 15px; height: 15px; margin: 5px; padding: 2px;">
+    <i class="svg-icon tags"></i> &nbsp;
+    {% for tag in page.tags %}
+      {{ tag }} &nbsp;
+    {% endfor %}
+  </div>  
+  
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
   {% include disqus.html %}
   
-  <small>
-    <i class="svg-icon tags"></i> &nbsp;
-    {% for tag in page.tags %}
-      {{ tag }} &nbsp;
-    {% endfor %}
-  </small>
 </article>
