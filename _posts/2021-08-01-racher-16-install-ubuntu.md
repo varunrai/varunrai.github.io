@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Installing Rancher on Ubuntu 18.04 (and newer)"
-date: 2021-08-01 22:10:00 +0800
+title: "Installing Rancher 1.6 on Ubuntu 18.04 (and newer)"
+date: 2020-02-01 22:10:00 +0800
 categories: rancher docker
 tags: rancher k8s kubernetes docker docker-compose ubuntu linux
 ---
