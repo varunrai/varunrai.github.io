@@ -5,8 +5,6 @@ date: 2020-11-26 09:20:30 +0800
 categories: jenkins azure devops
 ---
 
-## Connect to Azure DevOps Repository
-
 I was struggling to find the right set of instruction to connect Jenkins with Azure Devops Git Repository. Howevery after many attempts on getting Jenkins Build to fetch the git repository from Azure Devops worked.
 
 The solution was rather simple then anything.
