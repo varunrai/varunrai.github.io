@@ -5,7 +5,7 @@ date: 2021-08-01 22:10:00 +0800
 categories: rancher docker
 ---
 
-I had been trying to find a tool that would allow management of K8s cluster or standalone docker containers. After much of research found that rancher works well with k8s cluster and standalone containers. However, the challenge was getting into work, the installation is not straightforward and the user guides available have some or the other steps missing.
+I had been trying to find a tool that would allow management of K8s cluster or standalone docker containers. After much of research found that rancher works well with k8s cluster and standalone containers. However, the challenge was getting it to work, the installation is not straightforward and the user guides available have some or the other steps missing.
 
 I will also cover some of the issues and advanced configuration in the subsequent posts.
 
