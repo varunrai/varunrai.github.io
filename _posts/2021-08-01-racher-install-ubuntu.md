@@ -14,7 +14,6 @@ In this tutorial, you will learn how to install Rancher on Ubuntu.
 
 ## **Step 1: Install Docker**
 1. Before downloading any new packages, always make sure to update your system.
-
 ```sh
 sudo apt update
 ```
