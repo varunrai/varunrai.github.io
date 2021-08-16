@@ -3,6 +3,7 @@ layout: post
 title: "Installing Rancher on Ubuntu 18.04 (and newer)"
 date: 2021-08-01 22:10:00 +0800
 categories: rancher docker
+tags: rancher k8s kubernetes docker docker-compose ubuntu linux
 ---
 
 I had been trying to find a tool that would allow management of K8s cluster or standalone docker containers. After much of research found that rancher works well with k8s cluster and standalone containers. However, the challenge was getting it to work, the installation is not straightforward and the user guides available have some or the other steps missing.
