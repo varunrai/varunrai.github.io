@@ -90,3 +90,11 @@ Once you have accessed the platform, Rancher instructs you to set up the Admin u
 
 > Rancher has many options for authentication such as Active Directory, Azure Active Directory, Github, LDAP and Local. 
 > For the purpose of this demo we would use Local 
+
+
+
+## Issues
+- Host Registration fails because of SSL Certificate not configured
+- Rancher Agent - unable to connect to the rancher server
+
+
