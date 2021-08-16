@@ -7,17 +7,17 @@ categories: rancher docker
 
 In this tutorial, you will learn how to install Rancher on Ubuntu.
 
-**Prerequisites**
+**Pre-requisites**
 * An Ubuntu system
 * Access to a command-line/terminal
 * A user account with sudo or root privileges
-* Multiple nodes you can use for your cluster
-
 
 ## **Step 1: Install Docker**
 1. Before downloading any new packages, always make sure to update your system.
 
-`sudo apt update`
+```sh
+sudo apt update
+```
 
 
 2. Uninstall any old Docker versions by running the command.
