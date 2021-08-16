@@ -3,6 +3,7 @@ layout: post
 title: "Javascript Shorthand"
 date: 2020-11-26 10:20:00 +0800
 categories: javascript shorthand
+tags: javascript shorthand js cheatsheet
 ---
 
 There are various javascript shorthand techniques available for a more productive development process and clean coding style. Here are some of the few shorthand techniques:
