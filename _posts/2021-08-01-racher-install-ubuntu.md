@@ -18,18 +18,15 @@ In this tutorial, you will learn how to install Rancher on Ubuntu.
 sudo apt update
 ```
 
-
 2. Uninstall any old Docker versions by running the command.
 ```sh
 sudo apt-get remove docker docker-engine docker.io
 ```
 
-
 3. Now you can install Docker
 ```sh
 sudo apt install docker.io
 ```
-
 
 4. Verify the installation was successful:
 ```sh
