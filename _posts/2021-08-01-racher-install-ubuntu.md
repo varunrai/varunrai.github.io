@@ -21,31 +21,37 @@ sudo apt update
 
 
 2. Uninstall any old Docker versions by running the command.
-
-`sudo apt-get remove docker docker-engine docker.io`
+```sh
+sudo apt-get remove docker docker-engine docker.io
+```
 
 
 3. Now you can install Docker
-
-`sudo apt install docker.io`
+```sh
+sudo apt install docker.io
+```
 
 
 4. Verify the installation was successful:
-
-`docker --version`
+```sh
+docker --version
+```
 ![docker version](/images/b-docker-version.jpg "Docker Version")
 
 5. Start the Docker service:
-
-`sudo systemctl start docker`
+```sh
+sudo systemctl start docker
+```
 
 6. Set it to run at startup:
-
-`sudo systemctl enable docker`
+```sh
+sudo systemctl enable docker
+```
 
 7. Finally, check the status of Docker:
-
-`sudo systemctl status docker`
+```sh
+sudo systemctl status docker
+```
 
 The output should display the service is active (running).
 ![docker status](/images/b-docker-status.jpg "Docker Status")
@@ -55,21 +61,24 @@ The output should display the service is active (running).
 Once you have set up Docker, use the platform to create a container where you can run the Rancher server.
 
 1. Create a new Rancher server container using the following command:
-
-`sudo docker run -d --restart=unless-stopped -p 8080:8080 rancher/server:stable`
+```sh
+sudo docker run -d --restart=unless-stopped -p 8080:8080 rancher/server:stable
+```
 
 > In my scenario, i had used port 8090 as 8080 was used for some other application.
 > 
 > Hence, my command was: 
-> 
-> `sudo docker run -d --restart=unless-stopped -p 8090:8080 rancher/server:stable`
+> ```sh
+> sudo docker run -d --restart=unless-stopped -p 8090:8080 rancher/server:stable
+> ```
 
 > The command above instructs Docker to run the container in detached mode and to keep it running (unless it is manually stopped). The server container is configured to listen to port 8080, but you can modify the port number according to your needs.
 > Docker should pull the latest Rancher image and launch the container.
 
 2. To access the Rancher user interface, open a web browser and type the server IP number and port in the URL bar following the syntax:
-
-`https://[server_ip]:[port]`
+```
+https://[server_ip]:[port]
+```
 ![rancher status](/images/b-rancher-status.jpg "Rancher Status")
 
 ## **Step 3: Configure Rancher**
