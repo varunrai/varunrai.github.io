@@ -3,6 +3,7 @@ layout: post
 title: "Jekyll Code Highlight CSS Issue"
 date: 2021-07-25 00:00:00 +0800
 categories: jekyll css issue
+tags: jekyll "code highlight" css
 ---
 
 Recently, I started looking at the Jekyll Github pages to host the blog posts and got it working without much issues with the guide posted by [Barry Clark](https://github.com/barryclark/jekyll-now).
