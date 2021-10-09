@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Powershell AZ Module Update"
-date: 2020-08-20 23:20:00 +0800
+date: 2021-08-20 23:20:00 +0800
 categories: azure
 tags: azure powershell module
 ---
