@@ -10,7 +10,7 @@ There are various javascript shorthand techniques available for a more productiv
 
 **Declaring variables**
 
-```[javascript]
+```javascript
  // Longhand
 let x;
 let y = 20;
@@ -22,7 +22,7 @@ let x, y = 20;
 **Assigning values to multiple variables**  
 We can assign values to multiple variables in one line with array destructuring.
 
-```[javascript]
+```javascript
  //Longhand
 let a, b, c;
 a = 5;
@@ -36,7 +36,7 @@ let [a, b, c] = [5, 8, 12];
 **The Ternary operator**  
 We can save 5 lines of code here with ternary (conditional) operator.
 
-```[javascript]
+```javascript
  //Longhand
 let marks = 26;
 let result;

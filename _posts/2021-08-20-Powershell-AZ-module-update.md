@@ -10,13 +10,13 @@ Recently was trying to build the Azure Bicep templates and tried executing them 
 
 Check your AZ module version
 
-```[powershell]
+```powershell
 Get-InstalledModule -Name Az
 ```
 
 Check specific AZ sub-modules version
 
-```[powershell]
+```powershell
 Get-InstalledModule -Name Az.* -listAvailable
 ```
 
@@ -25,7 +25,7 @@ Here is the snippet of the powershell script that lets you update the AZ module 
 
 Firstly, Launch Powershell in Administrator mode.
 
-```[powershell]
+```powershell
 
 Get-Module -Name az.* -ListAvailable |
   Where-Object -Property Name -ne ‘Az.’ |
