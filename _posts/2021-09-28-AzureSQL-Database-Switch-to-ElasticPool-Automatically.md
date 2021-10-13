@@ -6,16 +6,30 @@ categories: azure
 tags: azure powershell automation azuresql elasticpool
 ---
 
+* Moving an Azure SQL Database automatically to Elastic Pool
 
-```[powershell]
-$connectionName = "AzureRunAsConnection"
-$servicePrincipalConnection = Get-AutomationConnection -Name $connectionName
+  There was requirement from the users to continue using the SQL Server Management Studio (SSMS) for managing the Azure SQL Databases and as part of that they also wanted to be able to create new databases. However, there was an issue that was discovered, when creating the database from SSMS there is no option for selecting the Elastic Pool associated with the database server.
 
-$logonAttempt = 0
-$logonResult = $False
+  [image]
 
-while(!($connectionResult) -And ($logonAttempt -le 10))
-{
+* Create an Azure Automation account
+
+* Set the Run As Accounts
+  Assign the account to your subscription or resource group level where your Azure SQL Server resides
+
+* Create a Powershell Runbook 
+
+  Powershell Script 
+
+  ```powershell
+  $connectionName = "AzureRunAsConnection"
+  $servicePrincipalConnection = Get-AutomationConnection -Name $connectionName
+
+  $logonAttempt = 0
+  $logonResult = $False
+
+  while(!($connectionResult) -And ($logonAttempt -le 10))
+  {
     $LogonAttempt++
     #Logging in to Azure...
     $connectionResult = Connect-AzAccount `
@@ -25,13 +39,13 @@ while(!($connectionResult) -And ($logonAttempt -le 10))
                            -CertificateThumbprint $servicePrincipalConnection.CertificateThumbprint
 
     Start-Sleep -Seconds 30
-}
+  }
 
-$servers = Get-AzResourceGroup | Get-AzSqlServer
+  $servers = Get-AzResourceGroup | Get-AzSqlServer
 
-Write-Host "Elastic Pool Enforcement Started"
+  Write-Host "Elastic Pool Enforcement Started"
 
-$servers | ForEach-Object {
+  $servers | ForEach-Object {
 	$serverName = $_.ServerName
 	$resourceGroupName = $_.ResourceGroupName
 	
@@ -58,6 +72,10 @@ $servers | ForEach-Object {
 	}		
 	
 	Write-Host "Elastic Pool Enforcement Completed"
-}
+  }
 
-```
+  ```
+
+* Create Schedule
+
+Voila! you are done.
