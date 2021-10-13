@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Powershell AZ Module Update"
+title: "Automation of moving Azure SQL database to Elastic Pool"
 date: 2021-09-28 13:20:00 +0800
 categories: azure
 tags: azure powershell automation azuresql elasticpool
