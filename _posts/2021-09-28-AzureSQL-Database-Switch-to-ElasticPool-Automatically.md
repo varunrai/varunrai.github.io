@@ -9,17 +9,18 @@ tags: azure powershell automation azuresql elasticpool
 * Moving an Azure SQL Database automatically to Elastic Pool
 
   There was requirement from the users to continue using the SQL Server Management Studio (SSMS) for managing the Azure SQL Databases and as part of that they also wanted to be able to create new databases. However, there was an issue that was discovered, when creating the database from SSMS there is no option for selecting the Elastic Pool associated with the database server.
-
-  [image]
-
+  
 * Create an Azure Automation account
 
 * Set the Run As Accounts
   Assign the account to your subscription or resource group level where your Azure SQL Server resides
 
 * Create a Powershell Runbook 
+  ![create-runbook](/images/create-a-runbook.jpg "Create Runbook")
 
   Powershell Script 
+  ![powershell-script](/images/powershell-script.jpg "Add powershell script")
+
 
   ```powershell
   $connectionName = "AzureRunAsConnection"
@@ -77,5 +78,6 @@ tags: azure powershell automation azuresql elasticpool
   ```
 
 * Create Schedule
+  ![create-schedule](/images/create-schedule.jpg "Create Schedule")
 
 Voila! you are done.
