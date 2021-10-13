@@ -16,9 +16,10 @@ tags: azure powershell automation azuresql elasticpool
   Assign the account to your subscription or resource group level where your Azure SQL Server resides
 
 * Create a Powershell Runbook 
+  
   ![create-runbook](/images/create-a-runbook.jpg "Create Runbook")
 
-  Powershell Script 
+* Add Powershell Script 
   ![powershell-script](/images/powershell-script.jpg "Add powershell script")
 
 
