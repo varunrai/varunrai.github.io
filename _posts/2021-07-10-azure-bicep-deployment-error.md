@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Azure: Bicep Deployment Error - Another operation on this or dependent resource is in progress"
-date: 2021-10-10 07:15:00 +0800
+date: 2021-07-10 07:15:00 +0800
 categories: azure
 tags: azure bicep deployment error arm templates
 ---
