@@ -8,6 +8,7 @@ tags: azure bicep deployment error arm templates
 
 I had been working on converting the ARM templates into Bicep by writing from scratch. One of the reason was the learning curve (by writing from scratch it will give a better understanding) and the other was complex ARM templates do give an error when trying to decompile.
 
+
 I noticed one annoying issue for a simple tasks as deploying a virtual network with multiple subnets - dependency / another operation in progress [see below error]. As far as i have read, Bicep should be able to calculate the dependencies automatically without explicitly defining in the code but that does not work always.
 
 ![bicep error](/images/azure-bicep-dep-error.jpg "Bicep Deployment Error")
